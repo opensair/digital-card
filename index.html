@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>opens_air | 디지털 명함</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", sans-serif;
+      background-color: #0f1115;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .card-container {
+      width: 100%;
+      max-width: 400px;
+      background: #1a1d24;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      border: 1px solid #2a2e39;
+    }
+    /* 이미지 영역 */
+    .image-header {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background-color: #000;
+      position: relative;
+      overflow: hidden;
+    }
+    .image-header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    /* 프로필 및 정보 영역 */
+    .profile-body {
+      padding: 24px;
+      text-align: center;
+    }
+    .name {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+    .title {
+      font-size: 14px;
+      color: #9aa0a6;
+      margin-bottom: 20px;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background-color: #2a2f3d;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      transition: background 0.2s ease;
+      box-sizing: border-box;
+    }
+    .btn:active {
+      background-color: #3b4256;
+    }
+    .btn-primary {
+      background-color: #3b82f6;
+    }
+    .btn-primary:active {
+      background-color: #2563eb;
+    }
+    .btn-kakao {
+      background-color: #FEE500;
+      color: #191919;
+    }
+    .btn-kakao:active {
+      background-color: #e5ce00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <!-- 1. 4계절 프로필 이미지 영역 -->
+    <div class="image-header">
+      <img src="profile_seasons.png" alt="opens_air 4계절 프로필 이미지">
+    </div>
+
+    <!-- 2. 프로필 정보 영역 -->
+    <div class="profile-body">
+      <h1 class="name">opens_air</h1>
+      <p class="title">드론 영상 촬영 및 영상 제작</p>
+
+      <!-- 3. 링크 버튼 영역 -->
+      <div class="btn-group">
+        <a href="tel:01026040034" class="btn btn-primary">전화 걸기</a>
+        <a href="https://open.kakao.com/o/sDbWaJJi" target="_blank" class="btn btn-kakao">카카오톡 문의하기</a>
+        <a href="https://www.instagram.com/opens_air/" target="_blank" class="btn">인스타그램</a>
+        <a href="https://www.youtube.com/@opens_air" target="_blank" class="btn">유튜브 채널</a>
+        <a href="mailto:opensair@gmail.com" class="btn">이메일 보내기</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
