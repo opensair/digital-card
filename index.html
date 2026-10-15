@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>opens_air | 디지털 명함</title>
+
+  <!-- 카카오톡 / 문자 메시지 미리보기(썸네일) 설정 -->
+  <meta property="og:title" content="opens_air | 드론 영상 촬영 및 제작">
+  <meta property="og:description" content="드론 항공 촬영 및 전문 영상 제작 서비스 - 디지털 명함">
+  <meta property="og:image" content="https://opensair.github.io/digital-card/profile_seasons.png">
+  <meta property="og:url" content="https://opensair.github.io/digital-card/">
+  <meta name="twitter:card" content="summary_large_image">
+
   <style>
     * {
       box-sizing: border-box;
@@ -29,7 +37,6 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
       border: 1px solid #2a2e39;
     }
-    /* 이미지 영역 */
     .image-header {
       width: 100%;
       aspect-ratio: 1 / 1;
@@ -43,7 +50,6 @@
       object-fit: cover;
       display: block;
     }
-    /* 프로필 및 정보 영역 */
     .profile-body {
       padding: 24px;
       text-align: center;
@@ -69,30 +75,38 @@
       display: block;
       width: 100%;
       padding: 14px;
-      background-color: #2a2f3d;
       color: #ffffff;
       text-decoration: none;
       border-radius: 12px;
       font-size: 15px;
       font-weight: 600;
-      transition: background 0.2s ease;
+      transition: opacity 0.2s ease;
       box-sizing: border-box;
     }
     .btn:active {
-      background-color: #3b4256;
+      opacity: 0.8;
     }
+    /* 전화걸기 - 파란색 */
     .btn-primary {
       background-color: #3b82f6;
     }
-    .btn-primary:active {
-      background-color: #2563eb;
-    }
+    /* 카카오톡 - 노란색 */
     .btn-kakao {
       background-color: #FEE500;
       color: #191919;
     }
-    .btn-kakao:active {
-      background-color: #e5ce00;
+    /* 인스타그램 - 보라/퍼플 계열 */
+    .btn-instagram {
+      background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    }
+    /* 유튜브 - 레드 */
+    .btn-youtube {
+      background-color: #FF0000;
+    }
+    /* 이메일 - 초록색 */
+    .btn-email {
+      background-color: #10B981;
+      color: #ffffff;
     }
   </style>
 </head>
@@ -113,9 +127,9 @@
       <div class="btn-group">
         <a href="tel:01026040034" class="btn btn-primary">전화 걸기</a>
         <a href="https://open.kakao.com/o/sDbWaJJi" target="_blank" class="btn btn-kakao">카카오톡 문의하기</a>
-        <a href="https://www.instagram.com/opens_air/" target="_blank" class="btn">인스타그램</a>
-        <a href="https://www.youtube.com/@opens_air" target="_blank" class="btn">유튜브 채널</a>
-        <a href="mailto:opensair@gmail.com" class="btn">이메일 보내기</a>
+        <a href="https://www.instagram.com/opens_air/" target="_blank" class="btn btn-instagram">인스타그램</a>
+        <a href="https://www.youtube.com/@opens_air" target="_blank" class="btn btn-youtube">유튜브 채널</a>
+        <a href="mailto:opensair@gmail.com" class="btn btn-email">이메일 보내기</a>
       </div>
     </div>
   </div>
